@@ -1,0 +1,21 @@
+.formmeasure{
+    width: 10cm;
+    height: 6cm;
+}
+.colours{
+    background-color: #000000c7 !important;
+}
+.imgmeasure{
+    width: 70px;
+    height: 100px;
+    margin-left: 43%;
+
+}   
+.buttonmeasure{
+    height: 45px;
+    width: 13cm;
+}
+
+.forsign{
+    color: wheat;
+}
