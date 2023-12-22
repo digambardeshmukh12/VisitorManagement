@@ -1,0 +1,61 @@
+<div class="container  items-center justify-center">
+    <!-- <div class="pagemeasure flex items-center justify-center bg-white"> -->
+    <div class="colours p-1 items-center justify-center rounded shadow-md">
+        <div class="flex flex-col items-center">
+             <h2 class="text-2xl text-white font-semibold mb-6 text-center">Visitor Management System</h2>
+            <h2 class="text-2xl text-white font-bold mb-6 text-center">Sign UP</h2>
+
+        </div>
+        
+        <!-- Login form -->
+        <form class="formmeasure ">
+            <div class="flex flex-col">
+                <div class="flex  items-center justify-center">
+
+                    <mat-form-field class=" formsize mr-6">
+                        <mat-icon matPrefix>group</mat-icon>
+                        <input matInput id="username" type="text" placeholder="Organization Name" />
+                    </mat-form-field>
+
+                    <mat-form-field class=" formsize ml-6">
+                        <mat-icon matPrefix>lock_open</mat-icon>
+                        <input matInput id="orgtype" type="text" placeholder="Organization Type" />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex  items-center justify-center">
+                    <mat-form-field class="  formsize mr-6">
+                        <mat-icon matPrefix>email</mat-icon>
+                        <input matInput id="username" type="text" placeholder="Organization E-Mail:" />
+                    </mat-form-field>
+
+                    <mat-form-field class=" formsize ml-6">
+                        <mat-icon matPrefix>call</mat-icon>
+                        <input matInput id="orgtype" type="text" placeholder="Organization Contact No." />
+                    </mat-form-field>
+                </div>
+
+                <div class="flex  items-center justify-center">
+                    <mat-form-field class="  formsize mr-6">
+                        <mat-icon matPrefix>my_location</mat-icon>
+                        <input matInput id="username" type="text" placeholder="Organization Address:" />
+                    </mat-form-field>
+
+                    <mat-form-field class=" formsize ml-6">
+                        <mat-icon matPrefix>payment</mat-icon>
+                        <input matInput id="orgtype" type="text" placeholder="Payments Method" />
+                    </mat-form-field>
+                </div>
+
+            </div>
+        </form>
+        <div class="flex flex-col items-center">
+
+        <button mat-buttons (click)="openDialog()" class=" formsize h-10 bg-red-500 hover:bg-red-600 text-white font-bold rounded focus:outline-none focus:shadow-outline" type="button" >
+           Create Account
+          </button>
+          </div>
+
+    </div>
+</div>
+<!-- </div> -->

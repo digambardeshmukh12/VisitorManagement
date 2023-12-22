@@ -1,51 +1,46 @@
-<!-- login.component.html -->
-
-<div class="min-h-screen flex items-center justify-center bg-white">
-    <div class="colours p-8 rounded shadow-md">
-      <img class="imgmeasure" src="/assets/logo.png" alt="image">
+<div class="container  items-center justify-center">
+    <!-- <div class="pagemeasure flex items-center justify-center bg-white"> -->
+    <div class="colours p-1 items-center justify-center rounded shadow-md">
+     <div class="flex flex-col items-center">
+      <img class="imgmeasure mb-4" src="/assets/logo.png" alt="image">
       <h2 class="text-2xl text-white font-semibold mb-6 text-center">Visitor Management System</h2>
+     </div>
   
       <!-- Login form -->
-      <form class="formmeasure">
-        <div class="mb-4">
-          <input matInput  class="appearance-none border rounded w-full h-10 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-            id="username"
-            type="text"
-            placeholder="Enter your username"
-          />
-        </div>
+      <form class="formmeasure ">
+        <div class="flex flex-col items-center justify-center">
+        <mat-form-field class="-mb-5 formsize">
+          <mat-icon matPrefix>person</mat-icon>
+          <input matInput id="username" type="text"   />
+        </mat-form-field>
   
-        <div class="mb-6">
-         
-          <input matInput class="appearance-none border rounded w-full h-10 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
-            id="password"
-            type="password"
-            placeholder="Enter your password"
-          />
-        </div>
+        <mat-form-field class="-mb-4 formsize">
+          <mat-icon matPrefix>lock_open</mat-icon>
+          <input matInput id="password"  type="password"   />
+        </mat-form-field>
   
-        <button mat-buttons class="w-full h-10 bg-red-500 hover:bg-red-600 text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline"
-          type="button"
-        >
+        <button mat-buttons class=" formsize h-10 bg-red-500 hover:bg-red-600 text-white font-bold rounded focus:outline-none focus:shadow-outline" type="button" >
           LOG IN
         </button>
+
+      </div>
       </form>
   
      
-      <div class="mt-4 flex justify-between">
+      <div class="mt-8 flex items-center justify-center">
         <button
-          class="text-sm forsign hover:underline focus:outline-none"
+          class="mr-20 text-sm forsign hover:underline  "
           type="button"
         >
           FORGOT PASSWORD
         </button>
         <button
-          class="text-sm forsign hover:underline focus:outline-none"
-          type="button"
+          class="text-sm ml-20 forsign hover:underline "
+          type="button" (click)="navigateToCreateAccount()"
         >
         NOT ACCOUNT? SIGN UP
         </button>
       </div>
     </div>
   </div>
-  
+<!-- </div> -->

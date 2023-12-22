@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-authentication',
@@ -10,7 +11,7 @@ export class AuthenticationComponent {
 
   loginForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder , private router: Router) {}
 
   ngOnInit() {
     this.initForm();
@@ -33,4 +34,13 @@ export class AuthenticationComponent {
       this.loginForm.markAllAsTouched();
     }
   }
+
+ 
+  /**
+   * Method to navigate to create account page
+   */
+  navigateToCreateAccount(): void {
+    this.router.navigate(['/create-account']); // Navigate to create account page
+  }
+
 }
