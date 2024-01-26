@@ -111,8 +111,8 @@ export class HomepageComponent {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ViewVisiterListComponent , {
-      width: '500px',
-      height: '300px',
+      width: '700px',
+      height: '500px',
       data: {
         title: 'Show Visiters',
         message: 'This is a sample message.',

@@ -8,6 +8,7 @@ import { MatBottomSheetModule } from '@Angular/material/bottom-sheet';
 import { MatCardModule }  from '@Angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog'; // Import MatDialogModule
  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +18,7 @@ import { ForgotPasswordDialogComponent } from './component/dialogs/forgot-passwo
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { NavbarComponent } from './component/others/navbar/navbar.component';
 import { ViewVisiterListComponent } from './component/others/dialog/view-visiter-list/view-visiter-list.component';
+import { AppointmentsRequestComponent } from './component/others/dialog/appointments-request/appointments-request.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,8 @@ import { ViewVisiterListComponent } from './component/others/dialog/view-visiter
     ForgotPasswordDialogComponent,
     HomepageComponent,
     NavbarComponent,
-    ViewVisiterListComponent
+    ViewVisiterListComponent,
+    AppointmentsRequestComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { ViewVisiterListComponent } from './component/others/dialog/view-visiter
     MatInputModule,
     MatIconModule,
     MatDialogModule,
+    MatMenuModule
      
 
   ],

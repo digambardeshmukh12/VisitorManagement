@@ -58,6 +58,7 @@
   align-items: center;
   justify-content:center;
   border-radius: 50%;
+  cursor: pointer;
 
 }
 .drawericon{
@@ -88,3 +89,21 @@
 
 
 }  
+
+.menu-measure{
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 150px;
+  padding: 8px !important;
+  background: #ada5a5;
+}
+
+.menu-user{
+  display: flex;
+ }
+
+::ng-deep .mat-mdc-menu-content {
+  padding: 0 0 !important;
+
+ }

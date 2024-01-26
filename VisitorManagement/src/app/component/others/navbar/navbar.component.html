@@ -4,12 +4,28 @@
 
   </div>
   <div class="flex ml-2">
+    <div (click)="checkRequest()" class="usericon"><mat-icon class="icon text-black">request</mat-icon></div>
     <div class="usericon"><mat-icon class="icon text-black">notifications</mat-icon></div>
-    <div class="usericon"><mat-icon class="icon text-black">person</mat-icon></div>
+    <div [matMenuTriggerFor]="menu" class="usericon"><mat-icon class="icon text-black">person</mat-icon></div>
   </div>
 
+ 
 </div>
 
+
+<mat-menu #menu="matMenu">
+<div class="menu-measure">
+  <div class="menu-user">
+    <div   class="usericon"><mat-icon class="icon text-black">person</mat-icon></div>
+
+    <div style="margin-top: 5px; margin-left:10px; display: flex; flex-direction: column;">
+    <span style=" font-size:larger; font-weight: 400;">Digambar Deshmukh</span>
+    <span style=" font-size:larger; font-weight: 400;">Sign in as Admin</span>
+
+    </div>
+  </div>
+ </div>
+</mat-menu>
 <!-- <div class="drawer">
 
     <div class="drawericon"><mat-icon class="icon text-black">notifications</mat-icon></div>
