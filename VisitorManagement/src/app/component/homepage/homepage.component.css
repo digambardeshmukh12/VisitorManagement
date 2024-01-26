@@ -1,0 +1,63 @@
+ 
+  
+ 
+     
+.header-card-extended {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; /* Sample background color */
+    cursor: pointer;
+  }
+  
+  .header-card-number-extended {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-text-extended {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  /* Resetting default margins and paddings for some elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  background-color: rgba(128, 128, 128, 0.425);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 40px;
+  margin-left: 60px;
+}
+
+ 
+
+/* Content section styles for demonstration */
+.content-section {
+  padding-left: 1cm;
+   height: 100%;
+}
+.usericon{
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  align-items: center;
+  justify-content:center;
+  border-radius: 50%;
+
+}
+.icon{
+  margin-left: 3px;
+  margin-top: 1px;
+}

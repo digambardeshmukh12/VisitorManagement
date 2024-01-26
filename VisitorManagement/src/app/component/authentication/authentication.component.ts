@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { ForgotPasswordDialogComponent } from '../dialogs/forgot-password-dialog/forgot-password-dialog.component';
 
 @Component({
   selector: 'app-authentication',
@@ -11,7 +13,7 @@ export class AuthenticationComponent {
 
   loginForm!: FormGroup;
 
-  constructor(private fb: FormBuilder , private router: Router) {}
+  constructor(private fb: FormBuilder , private router: Router,public dialog: MatDialog) {}
 
   ngOnInit() {
     this.initForm();
@@ -41,6 +43,21 @@ export class AuthenticationComponent {
    */
   navigateToCreateAccount(): void {
     this.router.navigate(['/create-account']); // Navigate to create account page
+  }
+
+  openForgotPasswordDialog(): void {
+    const dialogRef = this.dialog.open(ForgotPasswordDialogComponent, {
+      width: '600px',
+      height: '260px'
+    });
+  
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('Dialog closed', result); // Handle dialog close event
+    });
+  }
+
+  navigateToHome(): void {
+    this.router.navigate(['/home']); // Navigate to create account page
   }
 
 }

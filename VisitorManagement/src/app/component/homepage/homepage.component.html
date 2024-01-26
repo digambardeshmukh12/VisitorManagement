@@ -1,0 +1,79 @@
+<!-- <div class="flex justify-center md:flex-row sm: flex-col ng-tns-c418-214">
+     <div class="header-card-extended sm:ml-5 mt-4 ng-tns-c418-214">
+        <div class="header-card-number-extended ng-tns-c418-214">8900</div>
+        <div class="header-text-extended ng-tns-c418-214">Total Visitors</div>
+    </div>
+
+     <div class="header-card-extended md:ml-5 sm:ml-5 mt-4 ng-tns-c418-214">
+        <div class="header-card-number-extended ng-tns-c418-214">67</div>
+        <div class="header-text-extended ng-tns-c418-214">Yesterday Visitors</div>
+    </div>
+
+     <div class="header-card-extended md:ml-5 sm:ml-5 mt-4 ng-tns-c418-214">
+        <div class="header-card-number-extended ng-tns-c418-214">77</div>
+        <div class="header-text-extended ng-tns-c418-214">Today Appointments</div>
+    </div>
+
+     <div class="header-card-extended md:ml-5 sm:ml-5 mt-4 ng-tns-c418-214">
+        <div class="header-card-number-extended ng-tns-c418-214">6</div>
+        <div class="header-text-extended ng-tns-c418-214">Today's Visitors</div>
+    </div>
+
+  -->
+<div style=" overflow: hidden !important;">
+  <app-navbar></app-navbar>
+  <div class="content-section" style="overflow:hidden;">
+     
+   
+     <div class="flex justify-around my-8">
+      <div (click)="openDialog()" class="header-card-extended sm:ml-5 mt-4 ">
+          <div class="header-card-number-extended ">8900</div>
+          <div class="header-text-extended">This Months Total Visitors</div>
+      </div>
+  
+       <div (click)="openDialog()" class="header-card-extended md:ml-5 sm:ml-5 mt-4">
+          <div class="header-card-number-extended">67</div>
+          <div class="header-text-extended">Yesterday Visitors</div>
+      </div>
+  
+       <div (click)="openDialog()" class="header-card-extended md:ml-5 sm:ml-5 mt-4">
+          <div class="header-card-number-extended">77</div>
+          <div class="header-text-extended">Today Appointments</div>
+      </div>
+  
+       <div (click)="openDialog()" class="header-card-extended md:ml-5 sm:ml-5 mt-4">
+          <div class="header-card-number-extended">6</div>
+          <div class="header-text-extended">Today's Visitors</div>
+      </div>
+    </div>
+    
+    <!-- Chart Section Component -->
+    <div class="flex">
+       <div id="pieChartContainer" class="header-card-extended " style="height: 400px; margin-left: 100px;"></div>
+  
+       <div id="barGraphContainer" class="header-card-extended" style="height: 400px; margin-right: 100px;"></div>
+    </div>
+<!--     
+     <table class="min-w-full bg-white shadow-md rounded">
+      <thead>
+        <tr>
+          <th class="border px-4 py-2">Name</th>
+          <th class="border px-4 py-2">Check-in Time</th>
+          <th class="border px-4 py-2">Check-out Time</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let visitor of activeVisitors">
+          <td class="border px-4 py-2">{{ visitor.name }}</td>
+          <td class="border px-4 py-2">{{ visitor.checkInTime }}</td>
+          <td class="border px-4 py-2">{{ visitor.checkOutTime }}</td>
+        </tr>
+      </tbody>
+    </table> -->
+  
+     </div>
+</div>
+  
+ 
+
+ 

@@ -1,0 +1,90 @@
+.flex {
+    display: flex;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .md\:flex-row {
+    flex-direction: row;
+  }
+  
+  .sm\:flex-col {
+    flex-direction: column;
+  }
+  
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ .header {
+  background-color: rgba(128, 128, 128, 0.425);
+  color: white;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+ }
+
+/* Drawer styles */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 80px;
+  background-color: #131414e3;
+  color: white;
+  padding: 20px;
+}
+
+/* Drawer icon styles */
+.drawer-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+  
+
+ 
+.usericon{
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  align-items: center;
+  justify-content:center;
+  border-radius: 50%;
+
+}
+.drawericon{
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  align-items: center;
+  justify-content:center;
+  border-radius: 50%;
+  margin-top: 20px;
+
+}
+
+.icon{
+  margin-left: 3px;
+  margin-top: 1px;
+   
+}
+
+.ml-2{
+  gap:5px;
+}
+
+.imgmeasure{
+   width: 50px;
+  height: 50px;
+  margin: 10px;
+
+
+}  

@@ -10,16 +10,23 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import { MatDialogModule } from '@angular/material/dialog'; // Import MatDialogModule
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CreateAccountComponent } from './component/create-account/create-account.component';
 import { CreateAccountSuccefullyComponent } from './component/dialogs/create-account-succefully/create-account-succefully.component';
+import { ForgotPasswordDialogComponent } from './component/dialogs/forgot-password-dialog/forgot-password-dialog.component';
+import { HomepageComponent } from './component/homepage/homepage.component';
+import { NavbarComponent } from './component/others/navbar/navbar.component';
+import { ViewVisiterListComponent } from './component/others/dialog/view-visiter-list/view-visiter-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     AuthenticationComponent,
     CreateAccountComponent,
-    CreateAccountSuccefullyComponent
+    CreateAccountSuccefullyComponent,
+    ForgotPasswordDialogComponent,
+    HomepageComponent,
+    NavbarComponent,
+    ViewVisiterListComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +38,8 @@ import { CreateAccountSuccefullyComponent } from './component/dialogs/create-acc
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+     
 
   ],
   providers: [],

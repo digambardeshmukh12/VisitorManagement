@@ -2,24 +2,24 @@
     <!-- <div class="pagemeasure flex items-center justify-center bg-white"> -->
     <div class="colours p-1 items-center justify-center rounded shadow-md">
      <div class="flex flex-col items-center">
-      <img class="imgmeasure mb-4" src="/assets/logo.png" alt="image">
-      <h2 class="text-2xl text-white font-semibold mb-6 text-center">Visitor Management System</h2>
+      <img class="imgmeasure mb-4" src="/assets/logo2.png" alt="image">
+      <h2 class="text-2xl text-black font-semibold mb-6 text-center">Visitor Management System</h2>
      </div>
   
       <!-- Login form -->
       <form class="formmeasure ">
         <div class="flex flex-col items-center justify-center">
-        <mat-form-field class="-mb-5 formsize">
+        <mat-form-field class="-mb-5 formsize" appearance="outline">
           <mat-icon matPrefix>person</mat-icon>
-          <input matInput id="username" type="text"   />
+          <input matInput id="username" type="text" placeholder="Email"  />
         </mat-form-field>
   
-        <mat-form-field class="-mb-4 formsize">
+        <mat-form-field class="-mb-4 formsize" appearance="outline">
           <mat-icon matPrefix>lock_open</mat-icon>
-          <input matInput id="password"  type="password"   />
+          <input matInput id="password"  type="password"  placeholder="Password"  />
         </mat-form-field>
   
-        <button mat-buttons class=" formsize h-10 bg-red-500 hover:bg-red-600 text-white font-bold rounded focus:outline-none focus:shadow-outline" type="button" >
+        <button mat-buttons class=" formsize h-10 bg-blue-500 hover:bg-blue-600 text-white font-sans font-semibold rounded focus:outline-none focus:shadow-outline" type="button" (click)="navigateToHome()" >
           LOG IN
         </button>
 
@@ -29,16 +29,16 @@
      
       <div class="mt-8 flex items-center justify-center">
         <button
-          class="mr-20 text-sm forsign hover:underline  "
-          type="button"
+          class="mr-20 text-sm forsign hover:underline"
+          type="button" (click)="openForgotPasswordDialog()"
         >
-          FORGOT PASSWORD
+          <span class="text-black">FORGOT PASSWORD</span>
         </button>
         <button
-          class="text-sm ml-20 forsign hover:underline "
+          class="text-sm ml-20 forsign hover:underline  "
           type="button" (click)="navigateToCreateAccount()"
         >
-        NOT ACCOUNT? SIGN UP
+        <span class="text-black">NOT ACCOUNT? SIGN UP</span>
         </button>
       </div>
     </div>
